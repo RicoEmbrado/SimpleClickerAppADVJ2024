@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+    }//end onCreate event handler
 
     public void nextPage(View v)
     {
         startActivity(new Intent(MainActivity.this, ClickerPage.class));
-    }
+    }//end nextPage event handler
 }

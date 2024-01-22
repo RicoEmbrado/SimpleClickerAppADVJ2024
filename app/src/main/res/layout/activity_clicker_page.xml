@@ -17,7 +17,7 @@
         android:layout_marginTop="10pt"
         android:textStyle="bold"
         android:textSize="14pt"
-        android:text="🦭 Seal Collector 🦭" />
+        android:text="🌊 Seal Collector 🌊" />
 
     <TextView
         android:id="@+id/collectionText"
@@ -60,6 +60,6 @@
         android:textStyle="bold"
         android:textSize="12pt"
         android:onClick="nextPage"
-        android:text="🦭" />
+        android:text="⚪" />
 
 </LinearLayout>
