@@ -20,9 +20,19 @@ public class ClickerPage extends AppCompatActivity
 
     public void sealButtonClick (View v)
     {
-        Toast.makeText(this, "You have collected your first seal! Award: Beginner's Trophy", Toast.LENGTH_LONG).show();
-        sealsCount++;
-        TextView outputTextView = (TextView) findViewById(R.id.collectionText);
-        outputTextView.setText("You have collected " + sealsCount + " Harp Seal(s)!");
+        if (sealsCount == 0)
+        {
+            Toast.makeText(this, "You have collected your first seal! Congratulations!", Toast.LENGTH_LONG).show();
+            sealsCount++;
+            TextView outputTextView = (TextView) findViewById(R.id.collectionText);
+            outputTextView.setText("You have collected " + sealsCount + " Harp Seal(s)!");
+        }
+
+        else
+        {
+            sealsCount++;
+            TextView outputTextView = (TextView) findViewById(R.id.collectionText);
+            outputTextView.setText("You have collected " + sealsCount + " Harp Seal(s)!");
+        }
     }//end sealButtonClick event handler
 }
