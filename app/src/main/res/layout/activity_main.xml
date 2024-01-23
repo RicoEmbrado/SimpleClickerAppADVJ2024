@@ -8,6 +8,8 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/clickerAppText"
+        android:layout_marginTop="15pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -17,9 +19,9 @@
         android:text="🖱️ Clicker App 🖱️" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/mouseImage"
         android:layout_width="150pt"
-        android:layout_height="250pt"
+        android:layout_height="225pt"
         android:layout_gravity="center"
         android:src="@drawable/computermouse" />
 

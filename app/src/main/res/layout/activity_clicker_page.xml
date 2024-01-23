@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ClickerPage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/sealCollectorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="10pt"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:text="🌊 Seal Collector 🌊" />
+
+    <TextView
+        android:id="@+id/collectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="15pt"
+        android:textSize="9pt"
+        android:text="You have collected 0 Harp Seal(s)!" />
+
+    <ImageView
+        android:id="@+id/harpSealImage"
+        android:layout_marginTop="15pt"
+        android:layout_gravity="center"
+        android:layout_width="150pt"
+        android:layout_height="113pt"
+        app:srcCompat="@drawable/harpseal" />
+
+    <TextView
+        android:id="@+id/collectingButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="15pt"
+        android:textSize="9pt"
+        android:text="⬇️ Seal Collecting Button ⬇️" />
+
+    <Button
+        android:id="@+id/sealButton"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15pt"
+        android:backgroundTint="#989898"
+        android:fontFamily="monospace"
+        android:onClick="sealButtonClick"
+        android:text="⚪"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+</LinearLayout>
